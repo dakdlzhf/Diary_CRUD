@@ -8,6 +8,11 @@ const Edit = () => {
   const diaryList = useContext(DiaryStateContext);
   const [originData, setOriginData] = useState();
   const navigate = useNavigate();
+  
+  useEffect(()=>{
+    const titleElement = document.getElementsByTagName('title')[0];
+    titleElement.innerHTML = `감정 일기장 - ${id}번 일기수정`;
+  },[])
 
   const { id } = useParams();
   useEffect(() => {
