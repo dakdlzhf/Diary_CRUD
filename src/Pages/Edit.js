@@ -1,7 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { DiaryStateContext } from "../App";
-import DiaryList from "../components/DiaryList";
 import DiaryEditor from "../components/DiaryEditor";
 
 const Edit = () => {

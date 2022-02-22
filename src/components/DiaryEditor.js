@@ -1,4 +1,10 @@
-import React, { useCallback, useContext, useEffect, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useNavigate } from "react-router-dom";
 import MyHeader from "./MyHeader";
 import MyButton from "./MyButton";
@@ -8,7 +14,7 @@ import { getStringDate } from "../util/date";
 import { emotionList } from "../util/emtion";
 
 const DiaryEditor = ({ isEdit, originData }) => {
-  const { onCreate, onEdit,onRemove } = useContext(DiaryDispatchContext);
+  const { onCreate, onEdit, onRemove } = useContext(DiaryDispatchContext);
   const [emotion, setEmotion] = useState(3);
   const [date, setDate] = useState(getStringDate(new Date()));
   const [content, setContent] = useState("");
@@ -17,7 +23,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
 
   const handleClickEmote = useCallback((emotion) => {
     setEmotion(emotion);
-  },[]);
+  }, []);
   useEffect(() => {
     if (isEdit) {
       setDate(getStringDate(new Date(parseInt(originData.date))));
@@ -58,13 +64,14 @@ const DiaryEditor = ({ isEdit, originData }) => {
         leftChild={
           <MyButton onClick={() => navigate(-1)} text={"< 뒤로가기"} />
         }
-        rightChild={isEdit&&(
-          <MyButton
-            text={"삭제하기"}
-            type={"negative"}
-            onClick={handleRemove}
-          />
-        )
+        rightChild={
+          isEdit && (
+            <MyButton
+              text={"삭제하기"}
+              type={"negative"}
+              onClick={handleRemove}
+            />
+          )
         }
       />
       <div className="input_box">

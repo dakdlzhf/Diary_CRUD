@@ -81,30 +81,6 @@ function App() {
       <DiaryDispatchContext.Provider value={{ onCreate, onRemove, onEdit }}>
         <BrowserRouter>
           <div className="App">
-            {/* <MyHeader
-              headText={"App"}
-              leftChild={
-                <MyButton text={"왼쪽버튼"} onClick={() => alert("뒤로가기")} />
-              }
-              rightChild={
-                <MyButton
-                  text={"오른쪽버튼"}
-                  onClick={() => alert("앞으로가기")}
-                />
-              }
-            />
-            <h2>App.js</h2>
-            <MyButton
-              text={"버튼"}
-              type={"positive"}
-              onClick={() => alert("버튼클릭")}
-            />
-            <MyButton
-              text={"버튼"}
-              type={"negative"}
-              onClick={() => alert("버튼클릭")}
-            />
-            <MyButton text={"버튼"} onClick={() => alert("버튼클릭")} /> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/new" element={<New />} />
