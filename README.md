@@ -10,10 +10,10 @@
      * CRUD 
      * 날자와 최신순 정렬
 
-## 신경쓴부분
-* 라이브러리를 최대한 사용하지않고 만들어보려고 react Hooks 를 이용하였습니다.
-* 상태관리는 useState 와 useReducer useContext 를 이용하고,
-* 최적화를 해보기위해 useCallback useMemo 를 사용했습니다.
+>프로젝트를 시작하기전에 
+ 라이브러리를 최대한 사용하지않고 만들어보려고 react Hooks 를 이용하였습니다.
+ 상태관리는 useState 와 useReducer useContext 를 이용하고,
+ 최적화를 해보기위해 useCallback useMemo 를 사용했습니다.
 
 
 [사이트로 이동](https://wonderful-edison-3cc840.netlify.app)
