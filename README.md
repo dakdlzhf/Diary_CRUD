@@ -1,14 +1,15 @@
 ### 감성 일기장
 
   ## 사용한 라이브러리
-    * React
-    * Hooks
-    * React-router-dom
+  * React
+  * Hooks
+  * React-router-dom
     
      
  ## 주요기능
- * CRUD 
- * 날자와 최신순 정렬
+ 
+     * CRUD 
+     * 날자와 최신순 정렬
 
 [사이트로 이동](https://wonderful-edison-3cc840.netlify.app)
 
