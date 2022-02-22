@@ -36,7 +36,6 @@ const Home = () => {
         59,
         59
       );
-      console.log(new Date(lastDay));
       setData(
         diaryList.filter((it) => firstDay <= it.date && it.date <= lastDay)
       );

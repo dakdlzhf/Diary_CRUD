@@ -5,7 +5,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vw;
   margin: 0;
 }
 
@@ -20,14 +19,18 @@ body {
   }
 }
 #root {
-  background-color: white;
+  margin-top:200px;
+  background-color: black;
+  min-height: 40vh;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .App {
-  min-height: 100vh;
+  background-color:black;
+  min-height: 40vh;
   padding-left: 20px;
   padding-right: 20px;
   font-family: "Nanum Pen Script";
+  color:white;
 }
 
 /* MyButton */
@@ -46,14 +49,17 @@ body {
 .MyButton_default {
   background-color: #ececec;
   color: black;
+  font-size:1.5rem;
 }
 .MyButton_positive {
   background-color: #64c964;
   color: white;
+  font-size:1.5rem;
 }
 .MyButton_negative {
   background-color: #fd565f;
   color: white;
+  font-size:1.5rem;
 }
 /* HEADER */
 header {
@@ -106,7 +112,7 @@ header .head_btn_right {
   padding-right: 20px;
   cursor: pointer;
   font-family: "Nanum pen Script";
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 /* DiayItem */
 
@@ -150,12 +156,11 @@ header .head_btn_right {
   cursor: pointer;
 }
 .DiaryItem .diary_date{
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 2rem;
     margin-bottom: 5px;
 }
 .DiaryItem .diary_content_preview{
-    font-size: 18px;
+  font-size: 1.5rem;
 }
 .DiaryItem .btn_wrapper{
     min-width: 70px;
@@ -167,7 +172,7 @@ header .head_btn_right {
   margin-bottom: 40px;
 }
 .DiaryEditor h4{
-  font-size: 22px;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 .DiaryEditor .input_date{
@@ -180,11 +185,11 @@ header .head_btn_right {
   padding-right: 20px;
   cursor: pointer;
   font-family: "Nanum Pen Script";
-  font-size: 20px;
+  font-size: 1.8rem;
 }
 .DiaryEditor textarea{
   font-family: "Nanum Pen Script";
-  font-size: 20px;
+  font-size: 1.8rem;
   box-sizing: border-box;
   width: 100%;
   min-height: 200px;
@@ -221,11 +226,14 @@ header .head_btn_right {
   margin-bottom: 10px;
 }
 .EmotionItem span{
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 .EmotionItem_off{
   background-color: #ececec;
+  color:black;
   padding-top: 15px;
+  font-weight: bold;
+  
 }
 .EmotionItem_on_1{
   background-color: #64c964;
@@ -302,7 +310,7 @@ header .head_btn_right {
 }
 .DiaryPage .diary_content_wrapper{
   width: 100%;
-  background-color: #ececec;
+  background-color: white;
   border-radius: 5px;
   word-break: keep-all;/* 줄을바꿔야할경우 단어를 쪼개서 줄을바꾸지말라는속성 */
   overflow-wrap:break-word ;/* 단어가 길어질경우 텍스트를 끊어가지고 아랫줄로 줄변경시키는속성 */
@@ -313,4 +321,5 @@ header .head_btn_right {
   font-size: 20px;
   font-family: 'Yeon Sung';
   line-height: 2.5;
+  color:black;
 }

@@ -6,9 +6,6 @@ import New from "./Pages/New";
 import Edit from "./Pages/Edit";
 import Diary from "./Pages/Diary";
 
-//component
-import MyButton from "./components/MyButton";
-import MyHeader from "./components/MyHeader";
 
 const reducer = (state, action) => {
   let NewState = [];
@@ -42,7 +39,6 @@ export const DiaryDispatchContext = React.createContext();
 function App() {
   const [data, dispatch] = useReducer(reducer, []);
   const dataId = useRef(0);
-  console.log(new Date().getTime())
   
   useEffect(()=>{
     const localData = localStorage.getItem('diary');
