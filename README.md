@@ -14,5 +14,6 @@
 
 ![emotion0](https://user-images.githubusercontent.com/80139780/155120076-4150c45d-0522-4087-a3ff-a26be0ed52c9.gif)
 
-![감정 일기장 - Chrome 2022-02-22 오후 7_14_57](https://user-images.githubusercontent.com/80139780/155121294-6761455c-a0a3-412d-ab7d-d74d263ce1b0.png)
+![감정 일기장 - Chrome 2022-02-22 오후 7_14_57](https://user-images.githubusercontent.com/80139780/155121522-43b509a2-2869-4f6b-8efb-2c371924a208.png)
+
 
